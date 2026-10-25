@@ -1,0 +1,26 @@
+# Flatbread
+
+> Flatbread turns an agent session into one link: what was asked, every step, what broke, what fixed it and the diff. People read it. Agents pull it and pick up where it ended.
+
+A run page (https://flatbread.io/r/<id>) shows one agent session: the prompts, each step and tool call, the
+failures and how the agent recovered, and the files it changed. Everything on it is read from the
+session as recorded, with secrets replaced before upload.
+
+Install with `npm install -g flatbread-cli` (the package is `flatbread-cli`; the npm package `flatbread` is
+unrelated). Flatbread reads sessions from Claude Code, Codex, Cursor, OpenCode, Google Antigravity, Gemini CLI, Cline and GitHub Copilot CLI, and `flatbread setup` connects Claude Code, Codex, Cursor, Google Antigravity and OpenCode.
+
+## For agents
+
+- [Install and set up Flatbread](https://flatbread.io/install.md): steps an agent can follow
+- [Docs](https://flatbread.io/docs): install, share, pull, what is redacted, and the CLI reference
+- [How it works](https://flatbread.io/about): the three steps - share, read, pull - and the questions people ask first
+- Capsule of one run, as markdown: https://flatbread.io/api/runs/<id>/capsule
+
+## Runs
+
+- [All public runs](https://flatbread.io/runs)
+
+## Trust
+
+- [Privacy](https://flatbread.io/privacy): what is read, uploaded, stored, and who hosts it
+- [Terms](https://flatbread.io/terms)
