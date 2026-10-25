@@ -1,0 +1,30 @@
+name: Bug
+description: Something in flatbread-cli or flatbread.io does not work.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: flatbread doctor --json
+      description: Paste its output. Replace your username in any path first.
+      render: json
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: flatbread --version
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Coding agent and operating system
+      placeholder: Claude Code 2.1 on Ubuntu 24.04

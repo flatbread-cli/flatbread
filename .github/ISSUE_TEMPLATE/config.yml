@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Guide
+    url: https://flatbread.io/guide
+    about: Install, share, pull, and every command.

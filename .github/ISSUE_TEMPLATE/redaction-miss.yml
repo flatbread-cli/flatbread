@@ -1,0 +1,44 @@
+name: Redaction miss
+description: Flatbread left a secret, or something private, in a run.
+labels: [redaction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste the secret here, not even part of it.** Describe its shape instead.
+        If the run is public, open it and press Manage run first: redact the value, make the run
+        private, or delete it. Then rotate the secret.
+  - type: input
+    id: kind
+    attributes:
+      label: What kind of secret
+      placeholder: a Datadog API key
+    validations:
+      required: true
+  - type: textarea
+    id: shape
+    attributes:
+      label: Its shape
+      description: Length, character set, and any fixed prefix. Use x for every character that is not fixed.
+      placeholder: 32 hex characters, no prefix, after "DD_API_KEY=" in a shell command
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where it appeared
+      options:
+        - A prompt
+        - A command the agent ran
+        - A tool's output
+        - A file the agent read or changed
+        - The run's title or summary
+        - Somewhere else
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: flatbread --version
+    validations:
+      required: true
