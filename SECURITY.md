@@ -15,5 +15,6 @@ Only the latest version on npm is supported: `npm install -g flatbread-cli@lates
 
 ## If a secret of yours is in a public run
 
-Open the run and press **Manage run**: redact the value, make the run private, or delete it. Then rotate
-the secret - anyone could have read it while the run was public.
+Open the run and press **Manage run**: type the secret into **Hide a word or phrase** (or redact it in
+Kept values, if a reviewer kept it), make the run private, or delete it. Then rotate the secret - anyone
+could have read it while the run was public.

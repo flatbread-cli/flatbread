@@ -7,14 +7,14 @@ failures and how the agent recovered, and the files it changed. Everything on it
 session as recorded, with secrets replaced before upload.
 
 Install with `npm install -g flatbread-cli` (the package is `flatbread-cli`; the npm package `flatbread` is
-unrelated). Flatbread reads sessions from Claude Code, Codex, Cursor, OpenCode, Google Antigravity, Gemini CLI, Cline and GitHub Copilot CLI, and `flatbread setup` connects Claude Code, Codex, Cursor, Google Antigravity and OpenCode.
+unrelated). Flatbread reads sessions from Claude Code, Codex, Cursor, OpenCode, Google Antigravity, Gemini CLI, Cline and GitHub Copilot CLI, and `flatbread setup` connects Claude Code, Codex, Cursor, Google Antigravity, OpenCode, Gemini CLI, GitHub Copilot CLI and Cline.
 
 ## For agents
 
 - [Install and set up Flatbread](https://flatbread.io/install.md): steps an agent can follow
 - [Docs](https://flatbread.io/docs): install, share, pull, what is redacted, and the CLI reference
 - [How it works](https://flatbread.io/about): the three steps - share, read, pull - and the questions people ask first
-- Capsule of one run, as markdown: https://flatbread.io/api/runs/<id>/capsule
+- The execution brief of one run, as markdown: https://flatbread.io/api/runs/<id>/capsule
 
 ## Runs
 

@@ -26,6 +26,7 @@ model - and replaces every match with a token.
 | Private network address | `«REDACTED:private_ip»` |
 | Internal hostname | `«REDACTED:internal_host»` |
 | Secret assigned on one line | `«REDACTED:secret»` |
+| Random-looking string (a key with no known prefix) | `«REDACTED:high_entropy»` |
 | Email address | `«REDACTED:email»` |
 | Value of a credential-named field | `«REDACTED:secret»` |
 
@@ -33,8 +34,11 @@ It also replaces this machine's username wherever it appears as a word (`«REDAC
 word or phrase of your own: `flatbread share --redact <word>`, or add it on the review page
 (`«REDACTED:custom»`).
 
-The review page shows every replacement before you press Confirm. On a run you already shared, its
-Manage run button can redact more, make it private or delete it; a redaction can be added, never undone.
+Everything else in the session is sent when you press Confirm: your prompts, the agent's messages,
+the commands it ran, what they printed and the diffs it made. The review page shows all of it, and
+every replacement, before you press Confirm, and you can hide anything more there. On a run you already
+shared, its Manage run button can hide another word or phrase, make it private or delete it; a
+redaction can be added, never undone.
 
 A pattern can only find what it has a pattern for. Read the review page before you confirm, and if
 Flatbread missed a secret, report it with the redaction-miss issue form - describe its shape, never paste it.

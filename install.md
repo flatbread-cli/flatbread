@@ -22,8 +22,8 @@ The package is `flatbread-cli`. Never run `npx flatbread` or `npm install flatbr
 
     flatbread setup
 
-This registers the Flatbread MCP server, and a skill that says when to use it, with Claude Code, Codex, Cursor, Google Antigravity and OpenCode - each
-only where it is installed. It writes nothing else. `flatbread setup --dry-run` shows what it would write;
+This registers the Flatbread MCP server, and a skill that says when to use it, with Claude Code, Codex, Cursor, Google Antigravity, OpenCode, Gemini CLI, GitHub Copilot CLI and Cline - each
+only where it is installed. It writes nothing else, and updates keep it current: setup is a one-time step.
 `flatbread setup --uninstall` removes exactly what it added.
 
 ## 4. Check
@@ -51,7 +51,7 @@ the MCP server. Then they can say:
   redacted there; they can redact more and pick who sees the run. Nothing uploads until they press
   Confirm, and a run is private unless they choose otherwise.
 - "share this run from the prompt about X" - the same, for part of a long session.
-- "pull flatbread <id>" - reads that run's Context Capsule (what was asked, where it failed, what fixed it)
+- "pull flatbread <id>" - reads that run's execution brief (what was asked, where it failed, what fixed it)
   so you can apply it here. From a terminal: `flatbread pull <id>`.
 
 Before a task, you can search Flatbread for runs where an agent already worked through the same problem.
