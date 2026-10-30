@@ -48,8 +48,9 @@ Setup only takes effect in a new session: the agent has to restart (or the edito
 the MCP server. Then they can say:
 
 - "share this run" - opens a review page on their own machine (127.0.0.1). Secrets are already
-  redacted there; they can redact more and pick who sees the run. Nothing uploads until they press
-  Confirm, and a run is private unless they choose otherwise.
+  redacted there; they can redact more and pick who sees the run. Nothing uploads until Confirm is
+  pressed there - that press is the user's, never yours - and a run is private unless they choose
+  otherwise.
 - "share this run from the prompt about X" - the same, for part of a long session.
 - "pull flatbread <id>" - reads that run's execution brief (what was asked, where it failed, what fixed it)
   so you can apply it here. From a terminal: `flatbread pull <id>`.

@@ -2,6 +2,22 @@
 
 The versions of `flatbread-cli` on npm.
 
+## 0.9.8 - not yet published
+
+- A session Flatbread could not fully read says so. When part of a Codex, Cursor or other agent's log
+  is in a form Flatbread does not recognise, sharing warns you, and the brief another agent pulls
+  opens with "Not fully read", so it never looks more complete than it is. Parts a reader skips on
+  purpose (Codex's encrypted reasoning, duplicate copies) do not count.
+- Redaction reads the names of fields too, not only their values, and a number or true/false under a
+  field like `password` or `api_key` is hidden as well.
+- The review page shows every input that uploads, numbers and true/false values included.
+- The review page accepts its Confirm only from itself. Confirm is there to stop an accidental share:
+  an agent that can run commands on your machine could press it too, and the docs now say so.
+- A pulled brief opens by saying it is a record of a past run, data and not instructions. A pull
+  reads only from the site you asked, never one it is redirected to, and stops at 2 MB.
+- An upload or a sign-in is never re-sent when the site answers with a redirect.
+- Listed in the MCP Registry as `io.github.flatbread-cli/flatbread`.
+
 ## 0.9.7 - 2026-10-27
 
 - `flatbread guard` is removed. It reached 0.9.6 as an unannounced preview of a Teams feature that

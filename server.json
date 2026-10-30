@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.flatbread-cli/flatbread",
+  "description": "Share a coding agent's session as one link, secrets redacted first; pull another run's brief.",
+  "repository": {
+    "url": "https://github.com/flatbread-cli/flatbread",
+    "source": "github"
+  },
+  "websiteUrl": "https://flatbread.io",
+  "version": "0.9.8",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "flatbread-cli",
+      "version": "0.9.8",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ]
+    }
+  ]
+}
