@@ -16,6 +16,12 @@ unrelated). Flatbread reads sessions from Claude Code, Codex, Cursor, OpenCode, 
 - [How it works](https://flatbread.io/about): the three steps - share, read, pull - and the questions people ask first
 - The execution brief of one run, as markdown: https://flatbread.io/api/runs/<id>/capsule
 
+## Guides
+
+- [How to share a Claude Code session](https://flatbread.io/guides/share-claude-code-session): What Claude Code's /export and /share do, where it saves each session, and how to share one as a link with every step, the diff and secrets removed.
+- [How to share a Codex session](https://flatbread.io/guides/share-codex-session): What Codex's /export, /copy and /feedback do, where it saves each session, and how to share one as a link with every step, the diff and secrets removed.
+- [Where agents keep their session logs](https://flatbread.io/guides/agent-session-logs): Where Claude Code, Codex, Cursor, Gemini CLI and four more agents write each session on your disk, in what form, and what each one records.
+
 ## Runs
 
 - [All public runs](https://flatbread.io/runs)
